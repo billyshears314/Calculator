@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<div id="container">
+
+	<div id="results_box">
+		<textfield type="text" id="results_field"></textfield>
+	</div>
+	
+	<div id="buttons_box">
+	
+		<div id="7_button" class="button_item">7</div>
+		<div id="8_button" class="button_item">8</div>
+		<div id="9_button" class="button_item">9</div>
+		<div id="divide_button" class="button_item">/</div>
+		<div id="delete_button" class="button_item">DEL</div>
+		<div id="4_button" class="button_item">4</div>
+		<div id="5_button" class="button_item">5</div>
+		<div id="6_button" class="button_item">6</div>
+		<div id="multiply_button" class="button_item">x</div>
+		<div class="button_item"></div>
+		<div id="1_button" class="button_item">1</div>
+		<div id="2_button" class="button_item">2</div>
+		<div id="3_button" class="button_item">3</div>
+		<div id="minus_button" class="button_item">-</div>
+		<div class="button_item"></div>
+		<div id="decimal_button" class="button_item">.</div>
+		<div id="0_button" class="button_item">0</div>
+		<div class="button_item"></div>
+		<div id="plus_button" class="button_item">+</div>
+		<div id="equals_button" class="button_item">=</div>
+	
+	</div>
+
+
+</div>
+
+<script src="js/jquery-2.1.3.min.js"></script>
+<script>
+$(function(){
+
+	$('#7_button').click(function(){
+		$('#results_field').append('7');
+	});
+	
+	$('#8_button').click(function(){
+		$('#results_field').append('8');
+	});
+	
+	$('#9_button').click(function(){
+		$('#results_field').append('9');
+	});
+	
+		$('#divide_button').click(function(){
+		$('#results_field').append('/');
+	});
+	
+	//SPECIAL, DELETE LAST CHARACTER
+	$('#delete_button').click(function(){
+		//$('#results_field').append('');
+		
+		var str = $('#results_field').text();
+		
+		if(str.length>0){
+			$('#results_field').text(str.substring(0,str.length-1));		
+		}
+	});
+	
+	$('#4_button').click(function(){
+		$('#results_field').append('4');
+	});
+	
+	$('#5_button').click(function(){
+		$('#results_field').append('5');
+	});
+	
+	$('#6_button').click(function(){
+		$('#results_field').append('6');
+	});
+	
+	$('#multiply_button').click(function(){
+		$('#results_field').append('x');
+	});
+	
+	$('#1_button').click(function(){
+		$('#results_field').append('1');
+	});
+	
+	$('#2_button').click(function(){
+		$('#results_field').append('2');
+	});
+	
+	$('#3_button').click(function(){
+		$('#results_field').append('3');
+	});
+	
+	$('#minus_button').click(function(){
+		$('#results_field').append('-');
+	});
+	
+	$('#decimal_button').click(function(){
+		$('#results_field').append('.');
+	});
+	
+	$('#0_button').click(function(){
+		$('#results_field').append('0');
+	});
+	
+	$('#plus_button').click(function(){
+		$('#results_field').append('+');
+	});
+	
+	//SPECIAL, DETERMINE THE RESULT
+	$('#equals_button').click(function(){
+		//$('#results_field').append('');
+	});
+
+
+
+	
+});
+</script>
+
+</body>
+
+</html>
