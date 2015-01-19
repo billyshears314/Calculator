@@ -14,8 +14,8 @@ body{
 	background-color:#ababab;
 	padding:0px;
 	color:#000;
-	height:480px;
-	line-height:480px;
+	height:320px;
+	line-height:320px;
 	font-size:44px;
 	
 }
@@ -34,8 +34,8 @@ body{
 
 .button_item{
 	width:20%;
-	height:160px;
-	line-height:160px;
+	height:134px;
+	line-height:134px;
 	float:left;
 	padding:0px;
 	margin:0px;
