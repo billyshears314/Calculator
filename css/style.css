@@ -11,22 +11,21 @@ body{
 
 #results_box{
 	width:100%;
-	background-color:#aaa;
-	padding:5px;
+	background-color:#ababab;
+	padding:0px;
 	color:#000;
-	height:200px;
-	line-height:200px;
+	height:480px;
+	line-height:480px;
 	font-size:44px;
 	
 }
 
 #results_field{
-	
+	padding:10px;
 }
 
 #buttons_box{
 	width:100%;
-	background-color:#888;
 	padding:0px;
 	margin:0px;
 	color:#fff;
@@ -35,8 +34,8 @@ body{
 
 .button_item{
 	width:20%;
-	height:100px;
-	line-height:100px;
+	height:160px;
+	line-height:160px;
 	float:left;
 	padding:0px;
 	margin:0px;
